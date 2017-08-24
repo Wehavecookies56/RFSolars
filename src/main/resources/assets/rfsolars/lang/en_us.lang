@@ -1,0 +1,17 @@
+tile.rfsolars:solar_panel.basic.name=Photovoltaic Cell (Basic)
+tile.rfsolars:solar_panel.hardened.name=Photovoltaic Cell (Hardened)
+tile.rfsolars:solar_panel.reinforced.name=Photovoltaic Cell (Reinforced)
+tile.rfsolars:solar_panel.signalum.name=Photovoltaic Cell (Signalum)
+tile.rfsolars:solar_panel.resonant.name=Photovoltaic Cell (Resonant)
+
+item.rfsolars:silicon.name=Silicon
+item.rfsolars:crystalline_silicon.name=Crystalline Silicon
+item.rfsolars:crystalline_silicon_film.name=Crystalline Silicon Film
+
+itemGroup.rfsolars_tab=RF Solars
+
+info.rfsolars.solar_panel.0=Generates Energy (Redstone Flux) from The Sun
+info.rfsolars.solar_panel.1=Outputs energy from the bottom, efficiency is halved while raining
+
+info.rfsolars.solar_panel.blockinfo.0=Output: %s RF/t
+info.rfsolars.solar_panel.blockinfo.1=Efficiency: %s%%

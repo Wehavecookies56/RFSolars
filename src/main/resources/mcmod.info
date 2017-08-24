@@ -1,0 +1,17 @@
+[
+{
+  "modid": "rfsolars",
+  "name": "RF Solars",
+  "description": "Addon for Thermal Expansion that adds simple solar panels to generate RF",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Wehavecookies56"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "requiredMods": ["thermalexpansion"],
+  "dependencies": ["thermalexpansion"]
+}
+]

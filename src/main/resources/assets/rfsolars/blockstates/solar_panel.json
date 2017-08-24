@@ -1,0 +1,100 @@
+{
+	"forge_marker": 1,
+	"defaults": {
+		"model": "rfsolars:solar_panel.obj",
+		"custom": { "flip-v": true },
+		"transform": {
+			"gui": {
+				"rotation": [ { "x": 30 }, { "y": -45 }, { "z": 0 } ],
+				"scale": 0.6
+			},
+			"firstperson_lefthand": {
+				"rotation": [ { "x": 30 }, { "y": -45 }, { "z": 0 } ],
+				"scale": 0.6
+			},
+			"thirdperson_lefthand": {
+				"rotation": [ { "x": 30 }, { "y": -45 }, { "z": 0 } ],
+				"scale": 0.6
+			},
+			"firstperson": {
+				"rotation": [ { "x": 30 }, { "y": -45 }, { "z": 0 } ],
+				"scale": 0.6
+			},
+			"thirdperson": {
+				"rotation": [ { "x": 30 }, { "y": -45 }, { "z": 0 } ],
+				"scale": 0.6
+			},
+			"ground": {
+				"rotation": [ { "x": 0 }, { "y": 0 }, { "z": 0 } ],
+				"scale": 0.25
+			}
+		}
+	},
+	"variants": {
+    	"normal": [
+    		{
+    			"model": "rfsolars:solar_panel.obj",
+    			"transform":{
+    				"scale": 1.0
+    			}
+    		}
+    	],
+    	"inventory": [
+    		{
+    			"transform": {
+    				"gui": {
+    					"rotation": [ { "x": 30 }, { "y": -45 }, { "z": 0 } ],
+    					"scale": 0.6
+    				},
+    				"firstperson_lefthand": {
+    					"rotation": [ { "x": 30 }, { "y": -45 }, { "z": 0 } ],
+    					"scale": 0.6
+    				},
+    				"thirdperson_lefthand": {
+    					"rotation": [ { "x": 30 }, { "y": -45 }, { "z": 0 } ],
+    					"scale": 0.6
+    				},
+    				"firstperson": {
+    					"rotation": [ { "x": 30 }, { "y": -45 }, { "z": 0 } ],
+    					"scale": 0.6
+    				},
+    				"thirdperson": {
+    					"rotation": [ { "x": 30 }, { "y": -45 }, { "z": 0 } ],
+    					"scale": 0.6
+    				},
+    				"ground": {
+	    				"rotation": [ { "x": 0 }, { "y": 0 }, { "z": 0 } ],
+	    				"scale": 0.25
+    				}
+    			}
+    		}
+    	],
+    	"upgrade": {
+    		"basic": {
+    			"textures": {
+    				"#material": "rfsolars:solar_panel"
+    			}
+    		},
+    		"hardened": {
+    			"textures": {
+    				"#material": "rfsolars:solar_panel_hardened"
+    			}
+    		},
+    		"reinforced": {
+    			"textures": {
+    				"#material": "rfsolars:solar_panel_reinforced"
+    			}
+    		},
+    		"signalum": {
+    			"textures": {
+    				"#material": "rfsolars:solar_panel_signalum"
+    			}
+    		},
+    		"resonant": {
+    			"textures": {
+    				"#material": "rfsolars:solar_panel_resonant"
+    			}
+    		}
+		}
+    }
+}
