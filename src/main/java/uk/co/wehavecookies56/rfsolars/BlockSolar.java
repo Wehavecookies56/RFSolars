@@ -17,6 +17,7 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
@@ -74,15 +75,18 @@ public class BlockSolar extends BlockBase implements ITileEntityProvider, IUpgra
     }
 
     @Override
-    public void breakBlock(World worldIn, BlockPos pos, IBlockState state) {
-        EntityItem drop = new EntityItem(worldIn,(double) pos.getX() + new Random().nextDouble(),(double) pos.getY() + new Random().nextDouble(), (double) pos.getZ() + new Random().nextDouble());
-        drop.setItem(new ItemStack(Common.solar, 1, state.getValue(UPGRADE).ordinal()));
-        worldIn.spawnEntity(drop);
+    public ItemStack getPickBlock(IBlockState state, RayTraceResult target, World world, BlockPos pos, EntityPlayer player) {
+        return new ItemStack(this, 1, getMetaFromState(state));
     }
 
     @Override
-    public ItemStack getPickBlock(IBlockState state, RayTraceResult target, World world, BlockPos pos, EntityPlayer player) {
-        return new ItemStack(this, 1, getMetaFromState(state));
+    public Item getItemDropped(IBlockState state, Random rand, int fortune) {
+        return Item.getItemFromBlock(Common.solar);
+    }
+
+    @Override
+    public int damageDropped(IBlockState state) {
+        return  state.getValue(UPGRADE).ordinal();
     }
 
     @Override

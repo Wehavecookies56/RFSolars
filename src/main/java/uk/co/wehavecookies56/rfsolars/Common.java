@@ -38,10 +38,11 @@ import java.util.List;
 @Mod.EventBusSubscriber
 public class Common implements IProxy {
 
-    public static Block solar;
+    public static Block solar, colour_lamp;
 
     public static final Block[] BLOCKS = {
-            solar = new BlockSolar().add()
+            solar = new BlockSolar(),
+            colour_lamp = new BlockColourLamp()
     };
 
     public static Item silicon, crystallineSilicon, crystallineSiliconFilm;
@@ -75,6 +76,7 @@ public class Common implements IProxy {
             i.setCreativeTab(tab);
         }
         GameRegistry.registerTileEntity(TileSolar.class, RFSolars.MODID + ":solar_tile");
+        GameRegistry.registerTileEntity(TileColourLamp.class, RFSolars.MODID + ":colour_lamp_tile");
 
     }
 

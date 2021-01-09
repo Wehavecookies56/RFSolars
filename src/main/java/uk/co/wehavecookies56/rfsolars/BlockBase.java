@@ -12,9 +12,4 @@ public class BlockBase extends Block {
         this.setUnlocalizedName(this.getRegistryName().toString());
         this.setCreativeTab(Common.tab);
     }
-
-    public Block add() {
-        return this;
-    }
-
 }
